@@ -4,9 +4,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./Redux/store";
 import { Provider } from "react-redux";
-import { disableReactDevtools } from "@fvilers/disable-react-devtools";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 
-if (process.env.NODE_ENV === "production") disableReactDevtools();
+if (process.env.NODE_ENV === "production") disableReactDevTools();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
