@@ -5,8 +5,11 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./Redux/store";
 import { Provider } from "react-redux";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import axios from "axios";
 
 if (process.env.NODE_ENV === "production") disableReactDevTools();
+
+axios.defaults.baseURL = "https://honda-parts-marketplace-api.onrender.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
